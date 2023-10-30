@@ -1,0 +1,152 @@
+
+/*H1 Stylez*/
+.TituloSite{
+ text-align: center;
+ margin: 0px;
+ font-size: 35px;
+ font-family: cursive;
+ font-style: italic;
+}
+
+.subname h4{
+    text-align: center;
+    font-size: 10px;
+    margin: 0px;
+    border-style: none;
+    display: block;
+}
+
+body{
+    background-color: #454545;
+}
+
+.pfp {
+    width: 256px;
+    height: 256px;
+    border-radius: 45px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    text-align: left;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+#SidebarName{
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+    font-style: italic;
+}
+
+.description h2{
+    font-family: Cambria;
+    font-size: medium;
+    text-align: center;
+    width: 256px;
+    max-width: 256px;
+    margin: 2px;
+    padding:0px;
+    border-style: none;
+    border-width: 1px;
+}
+.Socials{
+    display: inline;
+    border-style: none;
+    max-width: 50px;
+    padding: 5px;
+}
+
+.TwitterLink{
+    text-align: center;
+}
+.TwitterImg{
+    border-radius: 45px;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.Site2Link{
+    text-align: center;
+}
+.Site2Img{
+    border-radius: 45px;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.Site3Link{
+    text-align: center;
+}
+.Site3Img{
+    border-radius: 45px;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.Site4Link{
+    text-align: center;
+}
+.Site4Img{
+    border-radius: 45px;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.Sidebar{
+    background-color: palegreen;
+    border-style:solid;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-width: 2px;
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    /*display: inline-block;*/
+}
+.mainPosts{
+
+    border-style: solid;
+    display:inline-block;
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+    margin: 2px;
+}
+#imgPost{
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    border-style: solid;
+    text-align: center;
+    float:left;
+}
+#textPost{
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    border-style: solid;
+    text-align: center;
+    float:left;
+}
