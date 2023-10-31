@@ -16,8 +16,12 @@
     display: block;
 }
 
-body{
-    background-color: #454545;
+html{
+    min-height: 100%;
+    background: linear-gradient(rgba(255,255,255,1.0)20%,rgba(224,224,224,1.0) 85%,rgba(100,100,100,1.0));
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .pfp {
@@ -106,7 +110,7 @@ body{
 }
 
 .Sidebar{
-    background-color: palegreen;
+    
     border-style:solid;
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 5%;
