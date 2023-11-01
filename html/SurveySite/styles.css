@@ -1,0 +1,61 @@
+/* css editing here */
+
+body{
+    background-color: #8888c3;
+}
+/*survey Title*/
+h1[id="title"]{
+    text-align: center;
+    font-size:xx-large;
+    margin:0.5em 0;
+    padding:unset;
+}
+
+/*survey description*/
+p[id="description"]{
+    text-align: center;
+    margin:0.5em 0;
+}
+
+
+fieldset{
+    text-align: left;
+    width: 100%;
+    max-height: 700px;
+    padding: 15px;
+    margin: 1.5rem 0;
+}
+
+div[name="formDiv"]{
+    margin:auto;
+    max-width: 800px;
+    height:auto;
+}
+.formName, .formEmail, .formAge{
+    margin: 0.1rem 0;
+    text-align: left;
+}
+
+input[id="name-label"],input[id="email-label"],input[type="number"]{
+    width: 100%;
+    text-align: left;
+    margin:auto;
+}
+
+div #cum{
+    text-align: left;
+    padding-left: 0px;
+}
+
+input[type="checkbox"]{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.osrs{
+    text-align: left;
+}
+.osrs #dropdown{
+    width: 100%;
+    text-align: center;
+}

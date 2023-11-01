@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Survey</title>
+
+    </head>
+    <body>
+        <section name="Survey top part">
+
+            <div name="pageTitle">
+
+                <h1 id="title">
+                    
+                    Survey - freecodecamp
+                
+                </h1>
+
+            </div>
+
+            <div name="desc">
+                <p id="description">
+
+                    Welcome to this survey, thank you for taking a time to respond.
+
+                </p>
+            </div>
+        </section>
+
+        <section name="form">
+            <div name="formDiv">
+                <form action="post" id="survey-form">
+
+                    <fieldset>
+                        <label for="name-label" >
+                            <p class="formName">
+                                Your Name:
+                            </p>
+                            <input id="name-label" type="text" placeholder="Name LastName" required>
+
+                        </label>
+
+                        <label for="email-label" >
+                            <p class="formEmail">
+                                Email:
+                            </p>
+                            <input id="email-label" type="email" placeholder="email@email.com" required>
+
+                        </label>
+
+                        <label for="number-label">
+                            <p class="formAge">
+                                Inform your age (years):
+                            </p>
+                            <input type="number" placeholder="18" min="13" max="120">
+
+                        </label>
+
+                    </fieldset>
+                    <fieldset class="osrs">
+
+                        <label for="dropdown">
+
+                            How long you've been playing osrs:<br>
+
+                            <select id="dropdown">
+
+                                <option>(select one)</option>
+
+                                <option>less than 1 year</option>
+
+                                <option>at least 5 years</option>
+
+                                <option>at least 8 years</option>
+
+                            </select>
+
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+
+                        <label>
+                            <p>
+                                Select how much you liked this survey:
+                            </p>
+                        
+                           <input type="radio" name="Choices" checked>1
+                           
+                           <input type="radio" name="Choices">2
+
+                           <input type="radio" name="Choices">3
+
+                           <input type="radio" name="Choices">4
+
+                           <input type="radio" name="Choices">5
+
+                        </label>
+
+                        <label id="cum">
+                            <p>
+                                What are yours weeb tastes?
+                            </p>
+                            <input id="box" type="checkbox">Manga<br>
+                            <input id="box" type="checkbox">Anime<br>
+                            <input id="box" type="checkbox">Visual Novels<br>
+                            <input id="box" type="checkbox">Light Novels<br>
+                            <input id="box" type="checkbox">Manhwa<br>
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
