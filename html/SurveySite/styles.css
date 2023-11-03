@@ -3,59 +3,110 @@
 body{
     background-color: #8888c3;
 }
+
 /*survey Title*/
 h1[id="title"]{
+    font-size: 62px;
     text-align: center;
-    font-size:xx-large;
-    margin:0.5em 0;
-    padding:unset;
+    font-family: sans-serif;
+    margin:0.1em 0;
+    padding-top: 45px;
+
 }
 
 /*survey description*/
 p[id="description"]{
+    font-size: 14px;
+    font-style: oblique;
     text-align: center;
+    font-family: sans-serif;
     margin:0.5em 0;
 }
-
 
 fieldset{
     text-align: left;
     width: 100%;
     max-height: 700px;
-    padding: 15px;
-    margin: 1.5rem 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 126, 0.363);
+    border-style: none;
 }
 
 div[name="formDiv"]{
-    margin:auto;
-    max-width: 800px;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
     height:auto;
-}
-.formName, .formEmail, .formAge{
-    margin: 0.1rem 0;
-    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    
 }
 
 input[id="name-label"],input[id="email-label"],input[type="number"]{
+    margin-bottom: 30px;
     width: 100%;
+    height: 30px;
     text-align: left;
+    font-size: larger;
+    background-color: #3b3b86;
+    color: #000000;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+input[id="name-label"]::placeholder,input[id="email-label"]::placeholder,input[type="number"]::placeholder{
     margin:auto;
+    color:white;
+    
 }
 
-div #cum{
-    text-align: left;
-    padding-left: 0px;
+
+hr{
+    width: 75%;
+    border-color: #000000;
+}
+.selections-fieldset{
+    border-style: solid;
+    background-color: rgba(0, 0, 126, 0.363);
+    width: 100%;
+    max-height: 700px;
+    font-size: 20px;
+    padding-top: 20px;
 }
 
-input[type="checkbox"]{
-    margin-left: 0px;
-    padding-left: 0px;
-}
-
-.osrs{
-    text-align: left;
-}
-.osrs #dropdown{
+#dropdown{
     width: 100%;
     text-align: center;
+    margin:auto;
+    color:white;
+    height: 30px;
+    background-color: #3b3b86;
+    border-style: none;
+    border-color: #000000;
+    font-size: 20px;
+}
+
+#radio-select{
+    border-style: none;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    display: block;
+}
+.selections-fieldset #radio-label{
+    border-style: none;
+    margin: 0;
+    display: block;
+    text-align: center;
+    background-color: #3b3b86;
+    color:white;
+}
+input[type="radio"]{
+    margin: 20px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border-style: none;
 }

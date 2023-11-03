@@ -15,7 +15,7 @@
 
                 <h1 id="title">
                     
-                    Survey - freecodecamp
+                     Survey - freecodecamp
                 
                 </h1>
 
@@ -24,7 +24,7 @@
             <div name="desc">
                 <p id="description">
 
-                    Welcome to this survey, thank you for taking a time to respond.
+                    Welcome to this  survey, thank you for taking a time to respond.
 
                 </p>
             </div>
@@ -35,32 +35,28 @@
                 <form action="post" id="survey-form">
 
                     <fieldset>
-                        <label for="name-label" >
-                            <p class="formName">
-                                Your Name:
-                            </p>
+                        <label id="label-name" for="name-label" >
+                            Your Name:
                             <input id="name-label" type="text" placeholder="Name LastName" required>
 
                         </label>
 
-                        <label for="email-label" >
-                            <p class="formEmail">
-                                Email:
-                            </p>
+                        <label id="label-email" for="email-label" >
+                            Email:
                             <input id="email-label" type="email" placeholder="email@email.com" required>
 
                         </label>
 
-                        <label for="number-label">
-                            <p class="formAge">
-                                Inform your age (years):
-                            </p>
+                        <label id="label-age" for="number-label">
+                            Inform your age (years):
                             <input type="number" placeholder="18" min="13" max="120">
 
                         </label>
 
                     </fieldset>
-                    <fieldset class="osrs">
+                    <hr>           
+
+                    <fieldset class="selections-fieldset">
 
                         <label for="dropdown">
 
@@ -79,28 +75,25 @@
                             </select>
 
                         </label>
-                    </fieldset>
 
-                    <fieldset>
+                        <label id="radio-select">
 
-                        <label>
-                            <p>
-                                Select how much you liked this survey:
-                            </p>
-                        
-                           <input type="radio" name="Choices" checked>1
+                            Select how much you liked this survey:
+                            <label id="radio-label">
+                                <input type="radio" name="Choices" checked>Hated
                            
-                           <input type="radio" name="Choices">2
+                                <input type="radio" name="Choices">Not so good
 
-                           <input type="radio" name="Choices">3
+                                <input type="radio" name="Choices">Its ok
 
-                           <input type="radio" name="Choices">4
+                                <input type="radio" name="Choices">I liked
 
-                           <input type="radio" name="Choices">5
+                                <input type="radio" name="Choices">Amazing
 
+                            </label>
                         </label>
 
-                        <label id="cum">
+                        <label id="Checkbox-label">
                             <p>
                                 What are yours weeb tastes?
                             </p>
