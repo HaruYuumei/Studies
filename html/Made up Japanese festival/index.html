@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>
+            2023 - Natsu Matsuri
+        </title>
+    </head>
+    <body>
+        <fieldset name="Survey-Description">
+            <label>
+                <h1 id="title"> 
+                    2023 - Natsu Matsuri research
+                </h1>
+                
+                <p id="description">
+                    A short term survey about our event  2023-Natsu Matsuri.
+                    Please read carefully and answer the questions truthfully
+                </p>   
+            </label>
+        </fieldset>
+
+        <!--            FORM BEGINS HERE                -->
+
+        <hr>
+
+        <form id="survey-form" action="post">
+            <!--PERSONAL QUESTIONS-->
+            <fieldset name="Personal-questions">
+                
+                    <label id="name-label">
+                        Your Name:
+                        <input id="name" type="text" placeholder="Enter Your Name..." required>
+                    </label>
+
+                    <label id="email-label">
+                        Your Email:
+                        <input id="email" type="email" placeholder="Email@email.com..." required>
+                    </label>
+
+                    <label id="number-label">
+                        How old are you?:
+                        <input id="number" type="number" min="13" max="120" placeholder="'x' years old">
+                    </label>
+
+            </fieldset>
+
+            <!--PERSONAL TASTES QUESTIONS-->
+
+            <hr>
+
+            <fieldset name="Personal-tastes">
+                <label id="User-Wants">
+                    Which of the followings you are most looking out for in the event?
+                    <select id="dropdown">
+                        
+                        <label>
+                            <option>Food stands</option>
+                        </label>
+
+                        <label>
+                            <option>Geek stands</option>
+                        </label>
+
+                        <label>
+                            <option>Culture stands</option>
+                        </label>
+
+                        <label>
+                            <option>Firework show</option>
+                        </label>
+
+                        <label>
+                            <option>Meet and greet</option>
+                        </label>
+                    </select>
+                </label>
+
+                <label id="Music-wants">
+                    <div>
+                        About the Background Music and Live shows, what music taste suits better the event for you:
+                    </div>
+
+                    <label>
+                        <input type="radio" name="radio" value="Jpop/rock">J-pop/j-rock
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radio" value="Kpop">K-pop
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radio" value="Lofi">lo-fi music
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radio" value="Eletronic">Eletronic(house/EDM)
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radio" value="Ambient">Ambient song
+                    </label>
+                </label>
+            
+                <label id="new-additions">
+
+                    <div>
+                        From the following options, what features you'd like to see present in the event?
+                    </div>
+
+                    <label>
+                        <input type="checkbox" value="More-food" >New food Stands.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="More-Cosplay">Cosplay competition.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="More-AsiaPopStuff">Asian Culture related shows.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="More-GamingStuff">Gaming related interviews.
+                    </label>
+                    
+                    <label>
+                        <input type="checkbox" value="More-GeekStuff">Geek culture related interviews.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="More-TaikoStuff">Taiko Groups.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="More-TraditionalStuff">Traditional asiatic culture dances.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="More-MeetandGreet">Celebrities Meet and Greet.
+                    </label>
+                </label>
+            </fieldset>
+
+            <!--EXTRA THINGS-->
+            <hr>
+
+            <fieldset name="Extra">
+
+                <label id="Extra-wants">
+                    Please take your time and let us know what other things you'd like to see in the event!
+                </label>
+
+                <label id="label-textarea"> 
+                    <textarea>                
+                    </textarea>
+                </label>
+
+                <label id="Submit-button">
+                    <input name="submit" type="submit" id="submit">
+                </label>
+            </fieldset>
+            
+        </form>
+    </body>
+</html>

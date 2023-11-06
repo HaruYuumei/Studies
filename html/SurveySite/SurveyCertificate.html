@@ -35,21 +35,21 @@
                 <form action="post" id="survey-form">
 
                     <fieldset>
-                        <label id="label-name" for="name-label" >
+                        <label id="name-label">
                             Your Name:
-                            <input id="name-label" type="text" placeholder="Name LastName" required>
+                            <input id="name" type="text" placeholder="Name LastName" required>
 
                         </label>
 
-                        <label id="label-email" for="email-label" >
+                        <label id="email-label">
                             Email:
-                            <input id="email-label" type="email" placeholder="email@email.com" required>
+                            <input id="email" type="email" placeholder="email@email.com" required>
 
                         </label>
 
-                        <label id="label-age" for="number-label">
+                        <label id="number-label" >
                             Inform your age (years):
-                            <input type="number" placeholder="18" min="13" max="120">
+                            <input id="number" type="number" placeholder="18" min="13" max="120">
 
                         </label>
 
@@ -80,15 +80,26 @@
 
                             Select how much you liked this survey:
                             <label id="radio-label">
-                                <input type="radio" name="Choices" checked>Hated
-                           
-                                <input type="radio" name="Choices">Not so good
 
-                                <input type="radio" name="Choices">Its ok
+                                <label>
+                                    <input type="radio" name="Choices" checked value="0">Hated
+                                </label>
 
-                                <input type="radio" name="Choices">I liked
+                                <label>
+                                    <input type="radio" name="Choices" value="1">Not so good
+                                </label>
 
-                                <input type="radio" name="Choices">Amazing
+                                <label>
+                                    <input type="radio" name="Choices" value="2">Its ok
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="Choices" value="3">I liked
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="Choices" value="4">Amazing
+                                </label>
 
                             </label>
                         </label>
@@ -97,13 +108,40 @@
                             <p>
                                 What are yours weeb tastes?
                             </p>
-                            <input id="box" type="checkbox">Manga<br>
-                            <input id="box" type="checkbox">Anime<br>
-                            <input id="box" type="checkbox">Visual Novels<br>
-                            <input id="box" type="checkbox">Light Novels<br>
-                            <input id="box" type="checkbox">Manhwa<br>
+
+                            <label>
+                                <input id="box" type="checkbox" value="Manga">Manga<br>
+                            </label>
+
+                            <label>
+                                <input id="box" type="checkbox" value="Anime">Anime<br>
+                            </label>
+
+                            <label>
+                                <input id="box" type="checkbox" value="Visual Novels">Visual Novels<br>
+                            </label>
+
+                            <label>
+                                <input id="box" type="checkbox" value="Light Novels">Light Novels<br>
+                            </label>
+
+                            <label>
+                                <input id="box" type="checkbox" value="Manhwa">Manhwa<br>
+                            </label>
+
                         </label>
                     </fieldset>
+                    <hr>
+                    <fieldset class="textarea">
+                        <label>
+                            Feel free to write us a bedtime story or give more informations about you:<br>
+                                <textarea id="textarea">
+                                </textarea>
+                                <input type="submit" id="submit"> Submit
+                        </label>
+                    </fieldset>
+
+
                 </form>
             </div>
         </section>
