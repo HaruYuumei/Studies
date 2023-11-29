@@ -32,10 +32,10 @@
             <nav id="nav-bar">
             
                 <!--Linking About Page-->
-                <a class="nav-link" href="#about">What is Yuumei's Bot</a>
+                <a class="nav-link" href="#About">What is Yuumei's Bot</a>
                 
                 <!--Linking Bot functions Page-->
-                <a class="nav-link" href="#funcions">Funcionalities</a>
+                <a class="nav-link" href="#functions">Funcionalities</a>
                 
                 <!--Linking Pricing Page-->
                 <a class="nav-link" href="#prices">Pricing</a>
@@ -50,17 +50,84 @@
         <main>
 
             <section id="About">
+                <h2>
+                    What Is Yuumei's Bot
+                </h2>
                 <p>Yuumei's Bot is a project made by HaruYuumei, this project consist of a Twitch ChatBot that allows interactions between streamer and viewers throught text based games,
                 this project started as a learning project, HaruYuumei wanted to study programming and decided to learn by doing a bot for twitch that allows online and offline chats to interact in a different way then other bots does.</p>
                 <p>The bot is still something under development so bugs and errors might be seen during your utilization. Keep in mind that this project is also made and maintained by few people, wich means that future updates might take long times to be launched.</p>
             </section>
     
             <section id="functions">
-    
+                <table id="Table">
+                    <tr>
+                        <th>
+                            Command
+                        </th>
+                        <th>
+                          Alias  
+                        </th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td id="command">!Ping</td>
+                        <td id="Table-alias">!png</td>
+                        <td>!Pong, Returns information about conectivity with the bot</td>
+                    </tr>
+                    <tr>
+                        <td id="command">!points / {username}</td>
+                        <td id="Table-alias">!pu</td>
+                        <td>Return to the user the amount of points he has </td>
+                    </tr>
+                    <tr>
+                        <td id="command">!gamble {quantity} / {all} </td>
+                        <td id="Table-alias">!g {q} /{all}</td>
+                        <td>Roll a d20 dice with difficulty 17, if the result is above, user wins same amount that it bet, if the result is lower, user lose the amount</td>
+                    </tr>
+                    <tr>
+                        <td id="command">!setgame {category}</td>
+                        <td id="Table-alias">!sg {category}</td>
+                        <td>Change the current game category of the stream, If the game is not found, it will choose based on the first word</td>
+                    </tr>
+                    <tr>
+                        <td id="command">!RussianRoulette </td>
+                        <td id="Table-alias">!rr</td>
+                        <td>roll a d6, if the result is 1 timesout the user in a random value between 1 to 69420 seconds </td>
+                    </tr>
+                    
+                </table>
             </section>
     
             <section id="prices">
-    
+                <div id="Free">
+                    <h2>FREE VERSION</h2>
+                    <p>The Free bot version contains:</p>
+                    <ul>
+                        <li>All Basic Features</li>
+                        <li>No Super-Mod Features</li>
+                        <li>No Custom Commands</li>
+                    </ul>
+                </div>
+                <div id="monthly">
+                    <h2>$2 monthly version</h2>
+                    <p>The $2 bot version contains:</p>
+                    <ul>
+                        <li>All Basic Features</li>
+                        <li>Super-Mod Features</li>
+                        <li>No Custom Commands</li>
+                    </ul>
+                </div>
+                <div id="yearly">
+                    <h2>$12 monthly version</h2>
+                    <p>The $12 bot version contains:</p>
+                    <ul>
+                        <li>All Basic Features</li>
+                        <li>Super-Mod Features</li>
+                        <li>Custom Commands</li>
+                        <li>Name on !Credits</li>
+                    </ul>
+                </div>
+                
             </section>
     
             <!--Newsletter submit Form-->
@@ -68,8 +135,8 @@
                 <div>
                     If you'd like to recieve news about the project and its updates, sign up below.
                 </div>
-                <div id="form" action="https://www.freecodecamp.com/email-submit">
-                    <form>
+                <div id="Form" >
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
                         <div>
                             Email:
                         </div>
@@ -81,14 +148,14 @@
     
     
             <!--Video instructions-->
-            <div name="Instr_Video">
-                <video id="video"></video>
+            <div id="Instr_Video">
+                <video id="video" controls>
+                    <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="mp4">
+                    <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="webm">
+                    <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="ogg">
+                     A nice music!
+                </video>
             </div>
-    
-            
-    
-
-
         </main>
         
         <!--Footer-->
