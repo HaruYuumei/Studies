@@ -10,8 +10,8 @@
 
 //======================Extras:
 //-Create dificulties (higher dificulty = more numbers)=== ok!
-//-Create score count, every time you got right you get one point===
-//-Create Hp, if player miss loses 1 hp, if hits 0 ends the game
+// - Create score count, every time you got right you get one point === ok
+// - Create Hp, if player miss loses 1 hp, if hits 0 ends the game ===
 
 
 use std::io;
@@ -31,6 +31,11 @@ let mut user_input_integer: i32;
 
 //tuple used to set the game difficulty
 let mut dif = (0,0);
+
+//score count variable
+let mut user_score :i32 = 0;
+
+
 /*
 
 
@@ -83,10 +88,9 @@ println!("Now please, tell me... What is the magic number???");
             Ordering::Equal =>
             {
                 println!("Your guessed the magic number!");
-                break;
+                user_score = add_score(user_score,1);
+                println!("You have {} points",user_score);
             } 
-            
-            
         }
 
     }
@@ -115,33 +119,39 @@ fn set_user_integer() -> i32
 fn change_dif(user_dif: i32) -> (i32,i32)
 {
     match user_dif
-{
-    1 =>{
-        println!("Easy Difficulty Selected!");
-        let mut d = (0,0);
-        d.0 = 1;
-        d.1 = 5;
-        return (d.0,d.1);
+    {
+        1 =>{
+            println!("Easy Difficulty Selected!");
+            let mut d = (0,0);
+            d.0 = 1;
+            d.1 = 5;
+            return (d.0,d.1);
+        }
+        
+        2 =>{
+            println!("Medium Difficulty Selected!");
+            let mut d = (0,0);
+            d.0 = 1;
+            d.1 = 10;
+            return (d.0,d.1);
+        }
+        
+        3 =>{
+            println!("Hard Difficulty Selected!");
+            let mut d = (0,0);
+            d.0 = 1;
+            d.1 = 50;
+            return (d.0,d.1);
+        }
+        _ =>{
+            println!("error");
+            return (0,0);
+        } 
     }
-    
-    2 =>{
-        println!("Medium Difficulty Selected!");
-        let mut d = (0,0);
-        d.0 = 1;
-        d.1 = 10;
-        return (d.0,d.1);
-    }
-    
-    3 =>{
-        println!("Hard Difficulty Selected!");
-        let mut d = (0,0);
-        d.0 = 1;
-        d.1 = 50;
-        return (d.0,d.1);
-    }
-    _ =>{
-        println!("error");
-        return (0,0);
-    } 
 }
+
+fn add_score(current: i32, increase: i32)->i32
+{   
+    let score = current + increase;
+    return score;
 }
