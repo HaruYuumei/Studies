@@ -8,27 +8,27 @@ fn main() {
     loop{
         println!("Please select which calculation you want to do:");
         println!("(1)-Add (2)-Sub (3)-Multiply (4)-Divide (5)-Exit app");
-        let mut calc = set_integer();
+        let calc = set_integer();
 
             match calc{
-                1 =>{
+                1.0 =>{
                     println!("type the first number you want to add:");
                     let mut n1 = set_integer();
                     println!("type the second number you want to add:");
                     let mut n2 = set_integer();
                     println!("Would you like to edit a number?");
                     println!("0-Don't edit, 1-Edit number 1({}), 2- Edit number 2({})",n1,n2);
-                    let mut change = set_integer();
+                    let change = set_integer();
                     match change{
-                        1=>{
+                        1.0=>{
                             println!("type the new number:");
                             n1 = set_integer();
                         }
-                        2=>{
+                        2.0=>{
                             println!("type the new number:");
                             n2 = set_integer();
                         }
-                        0=>{
+                        0.0=>{
                             println!("not editing the numbers");
                         }
                         _=>println!("alright"),
@@ -36,24 +36,24 @@ fn main() {
                     println!("Calculando:");
                     add(n1,n2);
                 }
-                2=>{
+                2.0=>{
                     println!("type the first number you want to subtract:");
                     let mut n1 = set_integer();
                     println!("type the second number you want to subtract:");
                     let mut n2 = set_integer();
                     println!("Would you like to edit a number?");
                     println!("0-Don't edit, 1-Edit number 1({}), 2- Edit number 2({})",n1,n2);
-                    let mut change = set_integer();
+                    let change = set_integer();
                     match change{
-                        1=>{
+                        1.0=>{
                             println!("type the new number:");
                             n1 = set_integer();
                         }
-                        2=>{
+                        2.0=>{
                             println!("type the new number:");
                             n2 = set_integer();
                         }
-                        0=>{
+                        0.0=>{
                             println!("not editing the numbers");
                         }
                         _=>println!("alright"),
@@ -61,24 +61,24 @@ fn main() {
                     println!("Calculando:");
                     sub(n1,n2);
                 }
-                3=>{
+                3.0=>{
                     println!("type the first number you want to multiply:");
                     let mut n1 = set_integer();
                     println!("type the second number you want to multiply:");
                     let mut n2 = set_integer();
                     println!("Would you like to edit a number?");
                     println!("0-Don't edit, 1-Edit number 1({}), 2- Edit number 2({})",n1,n2);
-                    let mut change = set_integer();
+                    let change = set_integer();
                     match change{
-                        1=>{
+                        1.0=>{
                             println!("type the new number:");
                             n1 = set_integer();
                         }
-                        2=>{
+                        2.0=>{
                             println!("type the new number:");
                             n2 = set_integer();
                         }
-                        0=>{
+                        0.0=>{
                             println!("not editing the numbers");
                         }
                         _=>println!("alright"),
@@ -86,24 +86,24 @@ fn main() {
                     println!("Calculando:");
                     mult(n1,n2);
                 }
-                4=>{
+                4.0=>{
                     println!("type the first number you want to Divide:");
                     let mut n1 = set_integer();
                     println!("type the second number you want to Divide:");
                     let mut n2 = set_integer();
                     println!("Would you like to edit a number?");
                     println!("0-Don't edit, 1-Edit number 1({}), 2- Edit number 2({})",n1,n2);
-                    let mut change = set_integer();
+                    let change = set_integer();
                     match change{
-                        1=>{
+                        1.0=>{
                             println!("type the new number:");
                             n1 = set_integer();
                         }
-                        2=>{
+                        2.0=>{
                             println!("type the new number:");
                             n2 = set_integer();
                         }
-                        0=>{
+                        0.0=>{
                             println!("not editing the numbers");
                         }
                         _=>println!("alright"),
@@ -111,7 +111,7 @@ fn main() {
                     println!("Calculando:");
                     divide(n1,n2);
                 }
-                5=>{
+                5.0=>{
                     println!("ooh... ok bye bye!");
                     break;
                 }
@@ -123,39 +123,39 @@ fn main() {
 
 }
 
-fn set_integer()->i64 
+fn set_integer()->f64 
 {
     let mut user_input: String = String::new();
     io::stdin()
     .read_line(&mut user_input)
     .expect("Gibe number dumbass!"); 
-    return user_input.trim().parse::<i64>().unwrap();
+    return user_input.trim().parse::<f64>().unwrap();
 }
 
-fn add(a:i64,b:i64)->i64
+fn add(a:f64,b:f64)
 {
-    let c:i64 = a + b;
+    let c:f64 = a + b;
     println!("{a} + {b} = {c}");
-    return c;
+
 }
 
-fn sub(a:i64,b:i64)->i64
+fn sub(a:f64,b:f64)
 {
-    let c:i64 = a - b;
+    let c:f64 = a - b;
     println!("{a} - {b} = {c}");
-    return c;
+
 }
 
-fn mult(a:i64,b:i64)->i64
+fn mult(a:f64,b:f64)
 {
-    let c:i64 = a * b;
+    let c:f64 = a * b;
     println!("{a} * {b} = {c}");
-    return c;
+
 }
 
-fn divide(a:i64,b:i64)->i64
+fn divide(a:f64,b:f64)
 {
-    let c:i64 = a / b;
+    let c:f64 = a / b;
     println!("{a} / {b} = {c}");
-    return c;
+
 }

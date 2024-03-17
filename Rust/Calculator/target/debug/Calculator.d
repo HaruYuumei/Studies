@@ -1,1 +1,1 @@
-C:\Users\luziv\Documents\Programming\Rust\Calculator\target\debug\Calculator.exe: C:\Users\luziv\Documents\Programming\Rust\Calculator\src\main.rs
+D:\Programming\Rust\calculator\target\debug\calculator.exe: D:\Programming\Rust\calculator\src\main.rs

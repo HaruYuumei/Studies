@@ -20,17 +20,11 @@ use std::cmp::Ordering;
 
 fn main() {  
 
-// user name    
-let user_input_string: String;
-
 // Generating a random number using rand::Rng;
 let _magic_number: i32 = rand::thread_rng().gen_range(1..=10);
 
 //variable to recieve user input in integer
 let mut user_input_integer: i32;
-
-//tuple used to set the game difficulty
-let mut dif = (0,0);
 
 //score count variable
 let mut user_score :i32 = 0;
@@ -47,7 +41,7 @@ println!("Hello, and welcome to the amazing unique master blaster Guessing Game!
 println!("First things first: What's your name?");
 
 //Getting the user input in String to assing the user name
-user_input_string = set_user_string();
+let user_input_string = set_user_string();
 
 println!("Welcome {}! a warm round of applause to the player!",user_input_string);
 println!("Clap~ Clap~ Clap~ Clap~");
@@ -57,7 +51,7 @@ println!("First choose you difficulty: 1- easy 2- Medium 3- Hard");
 //Getting the user input in a Integer to be used to define the game difficulty
 user_input_integer = set_user_integer();
 //calling a function to apply the game difficulty
-dif = change_dif(user_input_integer);
+let dif = change_dif(user_input_integer);
 
 println!("All you have to do now is guess the magic number!");
 println!("Now please, tell me... What is the magic number???");
@@ -125,7 +119,7 @@ fn change_dif(user_dif: i32) -> (i32,i32)
             let mut d = (0,0);
             d.0 = 1;
             d.1 = 5;
-            return (d.0,d.1);
+            (d.0,d.1)
         }
         
         2 =>{
@@ -133,7 +127,7 @@ fn change_dif(user_dif: i32) -> (i32,i32)
             let mut d = (0,0);
             d.0 = 1;
             d.1 = 10;
-            return (d.0,d.1);
+            (d.0,d.1)
         }
         
         3 =>{
@@ -141,17 +135,17 @@ fn change_dif(user_dif: i32) -> (i32,i32)
             let mut d = (0,0);
             d.0 = 1;
             d.1 = 50;
-            return (d.0,d.1);
+            (d.0,d.1)
         }
         _ =>{
             println!("error");
-            return (0,0);
+            (0,0)
         } 
     }
 }
 
-fn add_score(current: i32, increase: i32)->i32
+fn add_score(current: i32, increase: i32) -> i32
 {   
-    let score = current + increase;
-    return score;
+   current + increase
+  
 }
